@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dharani Manne | AI/ML Engineer Portfolio</title>
+
+   <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/95a2002ecf.js" crossorigin="anonymous"></script>
+
+    <!-- CSS (Correct Path) -->
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+
+    <!-- JS (Correct Path + forward slash + no dot) -->
+    <script defer src="./assets/Js/script.js"></script>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <a href="#" class="logo">DM</a>
+    
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="home" id="home">
+
+    <!-- animated gradient blob -->
+    <div class="blob"></div>
+
+    <div class="content">
+        <h2>Hello, I'm <span>Dharani Manne</span></h2>
+        <p>AI/ML Engineer | Focused on <span class="typing"></span></p>
+
+        <a href="#about" class="btn">Explore More <i class="fas fa-arrow-right"></i></a>
+
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/dharu-manne/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/DharaniManne6" target="_blank"><i class="fab fa-github"></i></a>
+             <a class="medium" aria-label="Medium" 
+           href="https://medium.com/@dharu.manne" target="_blank">
+           <i class="fab fa-medium"></i>
+        </a>
+        </div>
+    </div>
+
+    <!-- right side image -->
+    <div class="hero-img">
+        <img src="./assets/images/image.png" alt="Dharani Manne">
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+    <h2 class="heading">About <span>Me</span></h2>
+
+    <div class="about-box">
+        <p>
+            I’m a Master’s student in Data Science with strong skills in Machine Learning, NLP, LLMs, and end-to-end data workflows. Python is my favourite programming language, and I use it extensively for data analysis, EDA, model building, visualization, and deploying scalable ML/GenAI solutions.
+
+My experience includes developing ML pipelines, working on GenAI/NLP applications, and participating in multiple hackathons—where I’ve also mentored juniors on project development and problem-solving. I enjoy turning data into actionable insights, building intelligent systems, and continuously learning new technologies in the AI space.
+        </p>
+
+        <a href="./assets/resume/Dharani_Manne_DataScience.pdf" target="_blank" class="btn">View Resume</a>
+    </div>
+</section>
+
+<!-- ================= EDUCATION SECTION ================= -->
+<section class="education" id="education">
+    <h2 class="heading">My <span>Education</span></h2>
+
+    <div class="education-container">
+
+        <div class="education-card">
+            <h3>Master’s in Data Science</h3>
+            <h4>Wright State University, Dayton, OH</h4>
+            <p>
+                Pursuing a Master’s in Data Science with focus on Machine Learning, 
+                AI systems, statistical modeling, and data engineering.
+            </p>
+            <p class="edu-year">2025 – Present</p>
+        </div>
+
+        <div class="education-card">
+            <h3>Bachelor’s in Computer Science</h3>
+            <h4>Anna University, Chennai, India</h4>
+            <p>
+                Completed with strong fundamentals in programming, 
+                algorithms, distributed systems, and artificial intelligence.
+            </p>
+            <p class="edu-year">2020 – 2024</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+<section class="skills" id="skills">
+    <h2 class="heading">Tech <span>Skills</span></h2>
+
+    <div class="skill-grid">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Pandas/NumPy</div>
+        <div class="skill-card">Scikit-Learn</div>
+        <div class="skill-card">TensorFlow</div>
+        <div class="skill-card">PyTorch</div>
+        <div class="skill-card">Flask</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">SQL/PostgreSQL</div>
+        <div class="skill-card">Git/GitHub</div>
+        <div class="skill-card">Matplotlib</div>
+        <div class="skill-card">Seaborn</div>
+        <div class="skill-card">LangChain</div>
+        <div class="skill-card">AWS/Azure</div>
+        <div class="skill-card">Tableau</div>
+        <div class="skill-card">NLP</div>
+        <div class="skill-card">HTML5/CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Docker</div>
+
+
+
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<!-- <section class="projects" id="projects">
+    <h2 class="heading">My <span>Projects</span></h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>Airline Sentiment Analysis</h3>
+            <p>Developed ML (Logistic Regression, Naive Bayes) and DL (LSTM, RNN) models to classify 14,640 airline tweets with 87% accuracy, using TF-IDF, NLTK preprocessing, and visual EDA.</p>
+        </div>
+
+
+        <div class="project-card">
+    <h3>Skill-Based Job Ranking Web App</h3>
+    <p>Developed a Streamlit web app ranking 1,000+ job postings using TF-IDF and cosine similarity, achieving 90% skill-match accuracy with real-time top 10 job recommendations.</p>
+</div>
+    <div class="project-card">
+    <h3>Personalized Motivational Quote Chatbot</h3>
+    <p>Built a Streamlit-based chatbot processing 75K+ quotes using Sentence Transformers, achieving 92% semantic accuracy; implemented cosine similarity with optimized embedding caching to reduce response time by 68%.</p>
+</div>
+
+        <div class="project-card">
+    <h3>Movie Recommendation System</h3>
+    <p>Developed a content-based recommender using the MovieLens dataset (27K+ movies) with TF-IDF and cosine similarity, achieving 85% improved user satisfaction via hybrid filtering.</p>
+</div>
+
+
+        <div class="project-card">
+            <h3>Fraud Detection ML</h3>
+            <p>Implemented supervised ML models like XGBoost and SVM with preprocessing & pipeline creation.</p>
+        </div>
+        <div class="project-card">
+    <h3>Research Paper Deep-Research Agent</h3>
+    <p>Built a multi-agent AI system using LangGraph, LangChain, FAISS, and Groq LLMs that extracts, analyzes, summarizes, and critiques research papers. Designed four specialized agents (Extractor, Analyst, Insight, Critic) to automate document understanding and generate a structured research brief with RAG-based follow-up Q&A.</p>
+</div>
+
+    </div>
+</section> -->
+<!-- ================= PROJECTS ================= -->
+<section class="projects" id="projects">
+    <h2 class="heading">My <span>Projects</span></h2>
+
+    <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>Airline Sentiment Analysis</h3>
+            <p>Developed ML (Logistic Regression, Naive Bayes) and DL (LSTM, RNN) models to classify 14,640 airline tweets with 87% accuracy, using TF-IDF, NLTK preprocessing, and visual EDA.</p>
+
+            <div class="project-links">
+                <a href="https://github.com/DharaniManne6/airline-sentiment-analysis" target="_blank" class="proj-btn">
+                    <i class="fab fa-github"></i> Code
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Skill-Based Job Ranking Web App</h3>
+            <p>Developed a Streamlit web app ranking 1,000+ job postings using TF-IDF and cosine similarity, achieving 90% skill-match accuracy with real-time recommendations.</p>
+
+            <div class="project-links">
+                <a href="https://github.com/DharaniManne6/Skill-Based-Job-Matcher" target="_blank" class="proj-btn">
+                    <i class="fab fa-github"></i> Code
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3>Personalized Motivational Quote Chatbot</h3>
+            <p>Streamlit-based chatbot using Sentence Transformers; achieved 92% semantic accuracy with optimized embedding caching reducing response time by 68%.</p>
+
+            <div class="project-links">
+                <a href="https://github.com/DharaniManne6/PersonalizedQuoteChatbot" target="_blank" class="proj-btn">
+                    <i class="fab fa-github"></i> Code
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <h3>Movie Recommendation System</h3>
+            <p>Built a content-based recommender using MovieLens (27K+ movies) with TF-IDF and cosine similarity improving user satisfaction by 85%.</p>
+
+            <div class="project-links">
+                <a href="https://github.com/DharaniManne6/Movie-Recommendation-System" target="_blank" class="proj-btn">
+                    <i class="fab fa-github"></i> Code
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+            <h3>Fraud Detection ML</h3>
+            <p>Implemented supervised ML models like XGBoost and SVM with preprocessing, pipelines, and evaluation metrics.</p>
+
+            <div class="project-links">
+                <a href="https://github.com/YOUR-USERNAME/Fraud-Detection-ML" target="_blank" class="proj-btn">
+                    <i class="fab fa-github"></i> Code
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+            <h3>Research Paper Deep-Research Agent</h3>
+            <p>Built a LangGraph multi-agent AI system that extracts, summarizes, analyzes & critiques research papers using FAISS + Groq LLMs.</p>
+
+            <div class="project-links">
+                <a href="https://github.com/YOUR-USERNAME/Deep-Research-Agent" target="_blank" class="proj-btn">
+                    <i class="fab fa-github"></i> Code
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+<!-- <section class="experience" id="experience">
+    <h2 class="heading">Work <span>Experience</span></h2>
+
+    <div class="exp-box">
+        <h3>AI/ML Engineer — AVASOFT (2023–2024)</h3>
+        <ul>
+            <li>Built scalable scraping pipelines (Medium, LinkedIn, Twitter) using Python.</li>
+            <li>Developed ML-based performance grading system using Flask + scikit-learn.</li>
+            <li>Worked on anomaly detection (AIOps) using AWS & Azure monitoring APIs.</li>
+        </ul>
+    </div>
+</section> -->
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="experience" id="experience">
+    <h2 class="heading">Work <span>Experience</span></h2>
+
+    <div class="exp-box">
+        <h3>AI/ML Engineer — AVASOFT (Dec 2023 – July 2024)</h3>
+        <ul>
+            <li>Built scalable Python ETL pipelines processing <strong>500K+ social media posts</strong> from Medium, LinkedIn, and Twitter, improving data quality and model efficiency by <strong>40%</strong>.</li>
+
+            <li>Developed an ML-based performance grading system using <strong>Scikit-learn + Flask</strong>, achieving <strong>92% accuracy</strong> and automating evaluation workflows.</li>
+
+            <li>Implemented AIOps automation on <strong>Azure & AWS</strong> to monitor system metrics, detect anomalies, and reduce manual monitoring efforts by <strong>35%</strong>.</li>
+
+            <li>Designed, fine-tuned, and deployed <strong>LLM assistants</strong> for document summarization and internal knowledge retrieval, cutting analysis time by <strong>50%</strong>.</li>
+
+            <li>Optimized ETL workflows and <strong>PostgreSQL SQL queries</strong>, improving API response performance by <strong>30%</strong> across internal dashboards.</li>
+
+            <li>Deployed ML/LLM services as <strong>RESTful APIs</strong>, enabling seamless integration into applications and improving accessibility for downstream teams.</li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<!-- <section class="contact" id="contact">
+    <h2 class="heading">Get In <span>Touch</span></h2>
+
+    <div class="contact-box">
+        <p><i class="fas fa-envelope"></i> dharu.manne@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Dayton, Ohio</p>
+    </div>
+</section> -->
+<!-- ================= CONTACT ================= -->
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+    <h2 class="heading">Get In <span>Touch</span></h2>
+
+    <div class="contact-container">
+
+        <div class="contact-card">
+            <form class="contact-form" action="mailto:dharu.manne@gmail.com" method="POST" enctype="text/plain">
+                
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="input-box">
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> dharu.manne@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Dayton, Ohio</p>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2025 Dharani Manne · All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
