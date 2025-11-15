@@ -19,6 +19,88 @@ body {
     color: var(--white);
 }
 
+/* ========= DESKTOP DEFAULT (LOCKED) ========= */
+@media (min-width: 769px) {
+    .home {
+    min-height: 100vh;             /* full screen, no cutoff */
+    display: flex;
+    align-items: center;           /* vertical centering */
+    justify-content: space-between;
+    padding: 8% 8%;
+    position: relative;
+    overflow: hidden;              /* PREVENT cut-off issues */
+}
+
+
+    .content {
+        width: 50%;
+    }
+
+    .hero-img {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    .hero-img img {
+        width: 420px;
+        height: auto;
+        mix-blend-mode: lighten;
+        margin-top: 25% !important;
+    }
+}
+/* ----- MOBILE VIEW ONLY ----- */
+@media (max-width: 768px) {
+
+    .hero-img {
+        width: 100%;
+        display: right;
+        justify-content: flex-end;
+        margin-top: 50% !important;   /* ↓ pushes the image down */
+        position: relative;
+        right: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 260px;
+        height: 100%;
+        background: #111;
+        display: flex;
+        flex-direction: column;
+        padding-top: 8rem;
+        padding-left: 2rem;
+        border-left: 2px solid var(--orange);
+        z-index: 1500;
+        transition: 0.35s ease;
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .navbar a {
+        margin: 1.2rem 0;
+        font-size: 1.3rem;
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ----------- HEADER ---------- */
 header {
     position: fixed;
@@ -52,6 +134,7 @@ header {
 .navbar a.active {
     color: var(--orange);
 }
+
 /* ----------- HAMBURGER ICON CONTROL ---------- */
 #menu {
     display: none;
@@ -69,10 +152,7 @@ header {
 /* ----------- HERO SECTION ---------- */
 .home {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 10% 8%;
-    position: relative;
+    padding: 8% 8% 0 8%;   /* removed bottom padding */
 }
 
 /* animated blob */
@@ -141,47 +221,23 @@ header {
     color: var(--orange);
 }
 
-/* .hero-img {
-    width: 40%;
-    text-align: right;
-    z-index: 2;
-}
 
-.hero-img img {
-    width: 350px;
-    border-radius: 15px;
-    filter: drop-shadow(0px 0px 20px rgba(187,78,49,0.4));
-} */
-
+/* 
 .hero-img {
-    width: 50%;
+   width: 40% !important;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     z-index: 2;
     background: transparent !important;
-    margin-top: 80px;
-}
+margin-top: 10px !important;
 
-.hero-img img {
-    width: 430px;     /* adjust based on your layout */
-    height: auto;
+} */
 
-    /* absolute clean display */
-    border: none !important;
-    border-radius: 0 !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    outline: none !important;
 
-    object-fit: contain;
-    object-position: center;
 
-    /* no hover glow or border */
-    transition: 0.2s ease-in-out;
-}
-.hero-img img {
-    width: 420px;
+/* .hero-img img {
+    width: 360px;
     height: auto;
 
     border: none !important;
@@ -189,13 +245,13 @@ header {
     box-shadow: none !important;
 
     /* Removes black background by blending */
-    mix-blend-mode: lighten;     /* this is the key */
-}
+    /* mix-blend-mode: lighten;     this is the key */
+/* }  */
 
-.hero-img img:hover {
+/* .hero-img img:hover {
     transform: scale(1.02); /* optional */
-    box-shadow: none !important;
-}
+    /* box-shadow: none !important; */
+/* } */ 
 
 /* ----------- SECTION HEADINGS ---------- */
 .heading {
@@ -459,3 +515,23 @@ footer {
     background: #0d0d0d;
     color: #bbb;
 }
+
+/* ================= HAMBURGER FIX ================= */
+#menu {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    #menu {
+        display: block;
+        font-size: 32px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        top: 28px;
+        right: 30px;
+        z-index: 2000;
+    }
+}
+
+/* ============================== */
