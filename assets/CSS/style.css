@@ -86,6 +86,10 @@ body {
         line-height: 1.6rem;
         margin-top: 10px;
     }
+        .home p .typing {
+        display: block;  /* forces new line */
+        margin-top: 5px;
+    }
 
     .btn {
         padding: 0.6rem 1.2rem;
@@ -103,6 +107,10 @@ body {
         width: 45%;
         display: flex;
         justify-content: flex-end;
+        right: -10px;       /* pushes image further to the right */
+        top: 110px;         /* keeps it aligned with title */
+        width: 50%;
+        
     }
 
     .hero-img img {
