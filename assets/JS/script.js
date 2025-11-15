@@ -4,11 +4,7 @@ const navbar = document.querySelector(".navbar");
 
 menu.onclick = () => {
     navbar.classList.toggle("active");
-
-
 };
-// canvas background shape
-
 
 // typing animation
 const words = ["GenAI", "LLMs", "Machine Learning", "NLP", "AI Systems"];

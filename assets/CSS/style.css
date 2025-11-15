@@ -34,6 +34,7 @@ body {
 
     .content {
         width: 50%;
+        padding-top: 10px;
     }
 
     .hero-img {
@@ -47,58 +48,105 @@ body {
         width: 420px;
         height: auto;
         mix-blend-mode: lighten;
-        margin-top: 25% !important;
+        margin-top: 20% !important;
     }
 }
-/* ----- MOBILE VIEW ONLY ----- */
+/* ================= MOBILE HOME FIX ================= */
 @media (max-width: 768px) {
 
-    .hero-img {
-        width: 100%;
-        display: right;
-        justify-content: flex-end;
-        margin-top: 50% !important;   /* ↓ pushes the image down */
-        position: relative;
-        right: 0;
+    /* Prevent sideways scrolling */
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
     }
-}
 
-@media (max-width: 991px) {
-    .navbar {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 260px;
-        height: 100%;
-        background: #111;
+    /* Home section layout */
+    .home {
         display: flex;
-        flex-direction: column;
-        padding-top: 8rem;
-        padding-left: 2rem;
-        border-left: 2px solid var(--orange);
-        z-index: 1500;
-        transition: 0.35s ease;
+        flex-direction: row;   /* content left, image right */
+        align-items: center;
+        justify-content: space-between;
+        padding: 20% 6% 5% 6%;
+        min-height: 100vh;
+        gap: 10px;
+    }
+
+    /* Left text content */
+    .home .content {
+        width: 55%;
+    }
+
+    .home h2 {
+        font-size: 2rem !important; /* reduced */
+        line-height: 2.3rem;
+    }
+
+    .home p {
+        font-size: 1.2rem !important; /* reduced */
+        line-height: 1.6rem;
+        margin-top: 10px;
+    }
+
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+        margin-top: 1.2rem;
+    }
+
+    .socials a {
+        font-size: 1.4rem;
+        margin-right: 0.7rem;
+    }
+
+    /* Image side */
+    .hero-img {
+        width: 45%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero-img img {
+        width: 220px !important;
+        height: auto;
+        margin: 0;
+        mix-blend-mode: lighten;
+    }
+
+    /* Blob stays behind, shrinks */
+    .blob {
+        width: 250px;
+        height: 250px;
+        top: 30%;
+        left: -20%;
+        filter: blur(120px);
+    }
+
+    /* Hide navbar in mobile unless menu is open */
+    .navbar {
+        display: none !important;
     }
 
     .navbar.active {
+        display: flex !important;
+        position: fixed;
+        top: 0;
         right: 0;
+        width: 260px;
+        height: 100vh;
+        background: #111;
+        flex-direction: column;
+        padding-top: 120px;
+        padding-left: 20px;
+        border-left: 2px solid var(--orange);
+        gap: 18px;
+        z-index: 2000;
     }
 
-    .navbar a {
-        margin: 1.2rem 0;
+    .navbar.active a {
         font-size: 1.3rem;
-        color: #fff;
+        padding: 10px 0;
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 /* ----------- HEADER ---------- */
@@ -135,20 +183,6 @@ header {
     color: var(--orange);
 }
 
-/* ----------- HAMBURGER ICON CONTROL ---------- */
-#menu {
-    display: none;
-    
-}
-
-@media (max-width: 768px) {
-    #menu {
-        display: block;
-        font-size: 25px;
-        color: #fff;
-        cursor: pointer;
-    }
-}
 /* ----------- HERO SECTION ---------- */
 .home {
     min-height: 100vh;
@@ -221,37 +255,6 @@ header {
     color: var(--orange);
 }
 
-
-/* 
-.hero-img {
-   width: 40% !important;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 2;
-    background: transparent !important;
-margin-top: 10px !important;
-
-} */
-
-
-
-/* .hero-img img {
-    width: 360px;
-    height: auto;
-
-    border: none !important;
-    background: transparent !important;
-    box-shadow: none !important;
-
-    /* Removes black background by blending */
-    /* mix-blend-mode: lighten;     this is the key */
-/* }  */
-
-/* .hero-img img:hover {
-    transform: scale(1.02); /* optional */
-    /* box-shadow: none !important; */
-/* } */ 
 
 /* ----------- SECTION HEADINGS ---------- */
 .heading {
