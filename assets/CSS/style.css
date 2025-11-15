@@ -86,10 +86,12 @@ body {
         line-height: 1.6rem;
         margin-top: 10px;
     }
-        .home p .typing {
-        display: block;  /* forces new line */
-        margin-top: 5px;
+        .typing {
+        display: block;
+        margin-top: 6px;
+        font-size: 1.2rem;
     }
+
 
     .btn {
         padding: 0.6rem 1.2rem;
