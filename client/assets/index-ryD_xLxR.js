@@ -1,0 +1,1 @@
+import{j as o}from"./index-BYq61leb.js";function e(){return o.jsx("iframe",{src:"/portfolio.html",title:"Dharani Manne Portfolio",style:{position:"fixed",inset:0,width:"100vw",height:"100vh",border:"none"}})}export{e as component};
